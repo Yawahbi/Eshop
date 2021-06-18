@@ -64,12 +64,9 @@
                   ?>
                 <!-- Fin acceder au compte ou bien s'enregistrer -->
                 <li class="nav-item dropdown ml-4">
-                  <a class="nav-link btn btn-cart dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link btn btn-cart " href="cart.php" id="navbarDropdownMenuLink" role="button" >
                     <i class="fas fa-shopping-cart mr-2"></i><?php echo !(empty($_SESSION['count'])) ? $_SESSION['count'] : "" ?>
                   </a>
-                  <div class="dropdown-menu cart-product" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="cart.php"><?php echo !(empty($_SESSION['count'])) ? $_SESSION['count'] : "" ?> product(s)</a>
-                  </div>
                 </li>
               </ul>
             </div>

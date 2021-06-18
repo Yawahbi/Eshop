@@ -136,7 +136,7 @@
 													?>
 												</ul>
 											</div>
-											<a href="products.php?do=Add&productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
+											<a href="index.php?do=Add&productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
 										</div>
 									</div>
 								</div>
@@ -313,7 +313,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category"><?php echo $categorie['cat_title']?></p>
-								<h3 class="product-name"><a href="<?php echo "products.php?do=Add&productid=".$product['product_id']; ?> "><?php echo $product['product_title']?></a></h3>
+								<h3 class="product-name"><a href="<?php echo "index.php?do=Add&productid=".$product['product_id']; ?> "><?php echo $product['product_title']?></a></h3>
 								<h4 class="product-price"><?php echo $product['product_price']?> Dhs
 									<?php
 
@@ -535,7 +535,7 @@
 							</div>
 							<div class="product-body">
 								<p class="product-category"><?php echo $categorie['cat_title']?></p>
-								<h3 class="product-name"><a href="<?php echo "products.php?do=Add&productid=".$product['product_id']; ?> "><?php echo $product['product_title']?></a></h3>
+								<h3 class="product-name"><a href="<?php echo "index.php?do=Add&productid=".$product['product_id']; ?> "><?php echo $product['product_title']?></a></h3>
 								<h4 class="product-price"><?php echo $product['product_price']?> Dhs
 									<?php
 
