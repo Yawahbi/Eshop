@@ -8,25 +8,12 @@
 	$js='assets/js/';
 	$image='assets/images/banners/';
 	$images='assets/images/products/';
-	$language='includes/languages/';
 	$svg = '../../assets/svg/';
 
 
 	//Include les choses importantes
 	include $function.'functions.php';
-	// Include languages File
-	if( !( isset($_SESSION['lang']) )){
-	 	$_SESSION['lang'] = "en";
-	}else if(isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang']) ){
-	 	if($_GET['lang'] == "en"){
-	 		$_SESSION['lang'] = "en";
-	 	}
-	 	else if($_GET['lang'] == "fr"){
-	 		$_SESSION['lang'] = "fr";
-	 	}
-	}
 
-	include $language.'lang-'.$_SESSION['lang'].'.php';
 	//Include The Header File
 	include $tpl.'header.php';
 
