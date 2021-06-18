@@ -8,7 +8,7 @@
 
 	if(isset($_SESSION['user'])){
 
-		header('location:home.php');
+		header('location:index.php');
 
 	}
 
@@ -40,7 +40,7 @@
 				$_SESSION['logged']=true; // Notre utilisateur existe dans notre session
 				$_SESSION['user']=$row['username'];
 				$_SESSION['userid']=$row['user_id']; //enregistrer le nom d'utilisateur dans notre session.
-				header('location:home.php'); // pour ser rediriger ves la page dashborde de l'administrateur.
+				header('location:index.php'); // pour ser rediriger ves la page dashborde de l'administrateur.
 				exit();
 			}else{
 				$formErrors[]='Email ou mot de passe incorrect';

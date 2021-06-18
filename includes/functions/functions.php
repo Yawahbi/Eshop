@@ -75,7 +75,7 @@
 
 	function redirectFunction($message,$url=null,$seconds = 3){
 		if($url===null){
-			$url='home.php';
+			$url='index.php';
 			$link='HomePage';
 		}
 		elseif($url == 'login.php'){
@@ -88,7 +88,7 @@
 				$url=$_SERVER['HTTP_REFERER'];
 				$link='Previous Page';
 			}else{
-				$url='home.php';
+				$url='index.php';
 				$link='HomePage';
 			}
 

@@ -5,7 +5,7 @@
 	include 'init.php';
 	
 	if(isset($_SESSION['user'])){
-		header('location:home.php');
+		header('location:index.php');
 	}
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
