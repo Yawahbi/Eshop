@@ -9,55 +9,10 @@
 
 	<section class="menu-home">
 		<div class="container">
-			<div class="row mb-3">
 				<div class="col-12 ad-carousel p-0 h-100 mb-3">
-					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-					  <ol class="carousel-indicators">
-					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-					  </ol>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <img class="d-block w-100" src="<?php echo $image; ?>1b.png" alt="Third slide">
-					      <div class="carousel-caption d-none d-md-block">
-
-						  </div>
-					    </div>
-					     <div class="carousel-item">
-					      <img class="d-block w-100" src="<?php echo $image; ?>2b.png" alt="Third slide">
-					      <div class="carousel-caption d-none d-md-block">
-						  </div>
-					    </div>
-					     <div class="carousel-item">
-					      <img class="d-block w-100" src="<?php echo $image; ?>3b.jpg" alt="Third slide">
-					      <div class="carousel-caption d-none d-md-block">
-						  </div>
-					    </div>
-					     <div class="carousel-item">
-					      <img class="d-block w-100" src="<?php echo $image; ?>4b.jpg" alt="Third slide">
-					      <div class="carousel-caption d-none d-md-block">
-						  </div>
-					    </div>
-					    <div class="carousel-item">
-					      <img class="d-block w-100" src="<?php echo $image; ?>5b.jpg" alt="Third slide">
-					      <div class="carousel-caption d-none d-md-block">
-						  </div>
-					    </div>
-					  </div>
-					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
-					</div>
+					      <img  src="<?php echo $banner; ?>banner.png" >
 				</div>
-			</div>
-		</div>
+	
 	</section>
 
 	<!-- End menu Home -->
@@ -131,7 +86,7 @@
 													?>
 												</ul>
 											</div>
-											<a href="product.php?do=Add&productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
+											<a href="product.php?productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
 										</div>
 									</div>
 								</div>

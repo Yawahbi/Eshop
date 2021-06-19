@@ -30,7 +30,7 @@
 			if($_SESSION['products_'.$product_id]['id'] == $_POST['product_id']){
 
 
-				$message = lang('MESSAGE');
+				$message ='Vous avez déjà ce produit dans votre panier';
 				header('location:cart.php?message='.$message);
 
 			}
@@ -38,7 +38,7 @@
 
 				if($product['product_quantity'] < $quantite){
 
-					$message = lang('MESSAGE2').$product['product_quantity'];
+					$message ='La quantité disponible en stock:'.$product['product_quantity'];
 					header('location:cart.php?message='.$message);
 
 				}else{
@@ -86,7 +86,7 @@
 			if($_SESSION['products_'.$product_id]['id'] == $_POST['product_id']){
 
 
-				$message = lang('MESSAGE');
+				$message = 'Vous avez déjà ce produit dans votre panier';
 				header('location:cart.php?message='.$message);
 
 			}
@@ -94,7 +94,7 @@
 
 				if($product['product_quantity'] < $quantite){
 
-					$message = lang('MESSAGE2').$product['product_quantity'];
+					$message = 'La quantité disponible en stock:'.$product['product_quantity'];
 					header('location:cart.php?message='.$message);
 
 				}else{
@@ -123,7 +123,7 @@
 		}
 	}else{
 
-		$message='<div class="alert alert-warning mt-5">'.lang('MESSAGE3').'</div>';
+		$message='<div class="alert alert-warning mt-5">'."Vous devez vous connecter avant d'ajouter des articles au panier".'</div>';
 		redirectFunction($message,'login.php',3);
 
 	}

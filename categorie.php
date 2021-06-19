@@ -91,7 +91,7 @@
 														?>
 													</ul>
 												</div>
-												<a href="products.php?do=Add&productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
+												<a href="product.php?productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Montrer</a>
 											</div>
 										</div>
 									</div>

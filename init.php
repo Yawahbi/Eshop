@@ -6,7 +6,7 @@
 	$css='assets/css/';
 	$function='includes/functions/';
 	$js='assets/js/';
-	$image='assets/images/banners/';
+	$banner='assets/images/banners/';
 	$images='assets/images/products/';
 	$svg = '../../assets/svg/';
 
