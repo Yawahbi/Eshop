@@ -3,7 +3,7 @@
 	ob_start();
 	session_start();
 	include 'init.php';
-	$pageTitle='Rechercher';
+	$pageTitle='Search';
 	if(isset($_POST['search'])){
 		$search=$_POST['search'];
 	?>
@@ -49,7 +49,7 @@
 														<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
 													</ul>
 												</div>
-												<a href="index.php?do=Add&productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">Ajouter au <b> Panier </b></a>
+												<a href="product.php?productid=<?php echo $row['product_id']; ?>" class="btn btn-primary">MONTRER</a>
 											</div>
 										</div>
 									</div>
@@ -60,7 +60,7 @@
 
 										} // End if
 										else{
-											echo"<div class='alert alert-link'>Il n'y a aucun produit port ce nom : $search</div>";
+											echo"<div class='alert alert-link'>There is no product like this name : $search</div>";
 										}
 
 									?>
@@ -76,7 +76,7 @@
 	<?php
 
 	}else{
-		$message='<div class="alert alert-warning">'.'Vous devez d\'abord rechercher un élément '.'</div>';
+		$message='<div class="alert alert-warning">'."Vous devez d'abord rechercher un élément ".'</div>';
 		redirectFunction($message);
 	}
 

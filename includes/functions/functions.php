@@ -10,9 +10,6 @@
 		if(isset($pageTitle)){
 			echo $pageTitle;
 		}
-		else{
-			echo lang('DEFAULT');
-		}
 	}
 
 	/* La fonction de redirection
